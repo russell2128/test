@@ -1,7 +1,4 @@
-FROM archlinux:latest
-
-RUN ["pacman", "--noconfirm", "-Syu"]
-RUN ["pacman", "--noconfirm", "-S", "python", "python-pip"]
+FROM python:3.12-alpine
 
 WORKDIR /backend-server
 
