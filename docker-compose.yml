@@ -13,5 +13,5 @@ services:
     ports:
       - "10400:10400"
     volumes:
-      - ./backend:./backend-server
+      - ./backend:/backend-server
 
