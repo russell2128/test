@@ -14,4 +14,7 @@ services:
       - "10400:10400"
     volumes:
       - ./backend:/backend-server
+      - ./local/data:/data
+    environment:
+      - DATABASE_URI=sqlite:////data/capstone-database.sqlite
 
