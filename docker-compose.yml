@@ -4,7 +4,7 @@ services:
     ports:
       - "10200:10200"
     volumes:
-      - ./frontend/src:/usr/src/app/src
+      - ./frontend/src:/usr/src/capstone/src
     environment:
       - REACT_APP_BACKEND_URL=http://localhost:10400
 

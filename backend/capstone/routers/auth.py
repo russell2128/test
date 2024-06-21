@@ -8,4 +8,3 @@ import pydantic
 
 
 router = fastapi.routing.APIRouter()
-
