@@ -10,4 +10,4 @@ EXPOSE 10400
 
 ENV PYTHONPATH "/backend-server/"
 
-ENTRYPOINT ["fastapi", "dev", "--reload", "--port", "10400", "./app/main.py"]
+ENTRYPOINT ["fastapi", "run", "--port", "10400", "./app/main.py"]

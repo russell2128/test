@@ -2,3 +2,5 @@ uvicorn
 fastapi
 sqlmodel
 pydantic
+pyjwt
+passlib[bcrypt]
