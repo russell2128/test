@@ -12,6 +12,9 @@ class WandsCentralHub:
     auth_wand: capstone.universe.auth.AuthenticationWand
     db_wand: capstone.universe.db.DatabaseWand
 
+    def db_session(self) -> sqlmodel.Session:
+        return self.db_wand.session()
+
 
 universal_wch: WandsCentralHub
 
