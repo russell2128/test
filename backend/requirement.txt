@@ -1,5 +1,6 @@
 uvicorn
 fastapi
+aiosqlite
 sqlmodel
 pydantic
 pyjwt

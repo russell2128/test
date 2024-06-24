@@ -1,14 +1,14 @@
 import fastapi
 import fastapi.routing
 
-import capstone.universe.cent
+import capstone.universe
 import capstone.routers.auth
 
 app = fastapi.FastAPI()
 
 app.include_router(capstone.routers.auth.router, prefix="/auth")
 
-capstone.universe.cent.initialize_wch()
+capstone.universe.initialize_wch()
 
 if __name__ == "__main__":
     import uvicorn

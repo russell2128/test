@@ -16,5 +16,4 @@ services:
       - ./backend:/backend-server
       - ./local/data:/data
     environment:
-      - DATABASE_URI=sqlite:////data/capstone-database.sqlite
-
+      - DATABASE_URI=sqlite+aiosqlite:////data/capstone-database.sqlite
